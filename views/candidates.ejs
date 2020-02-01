@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/students.css">
+    <title>Find jobs</title>
+  </head>
+  <body>
+    <div class="jobs">
+        <h1 id="title1">Candidates against Jobs</h1>
+
+
+
+
+
+        <div class="newdiv">
+          <% for(var i=0; i<jobs.length; i++) {%>
+
+
+            <div class="job1"  data-divId="<%=divId[i]%>">
+              <h2>Job <%=i+1 %></h2>
+                <ul>
+
+          <li> <span> Job Title :</span><label for="name"> <%= jobs[i].jobtitle %></label></li>
+            <li> <span> Job description :</span><%= jobs[i].decription %></li>
+              <li> <span> Job discipline :</span><%= jobs[i].discipline %></li>
+                <li> <span> Job experience :</span><%= jobs[i].experience %></li>
+                  <li> <span> Job tags:</span><%= jobs[i].tags %></li>
+
+
+
+          </ul>
+
+          <div id="cand1">
+            <% for(let i = 0; i < students.length; i++) { %>
+                <div class="friend-box" data-divId="<%=divId[i]%>">
+                    <img src="images/avatar.png" alt="Avatar" class="avatar">
+                    <label id="name"  for="name"> <%=students[i]%> </label> <br>
+                    <label for="name"><span id="sp">Relevancy:<%=relevancy%></span></label><br>
+                    <input id="hire" type="button" name="" value="Hire">
+
+
+                </div>
+
+            <% } %>
+
+          </div>
+
+          </div>
+  <% } %>
+
+
+
+
+        </div>
+
+    </div>
+
+    <script src="jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="main4.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function myfunc(op){
+          var option = op;
+
+          var x = document.getElementById('sel').selectedIndex;
+          if(option==1){
+          if(x==0){
+            location.href="/login"
+          }
+          else{
+            location.href="/rec-login";
+          }
+        }
+        if(option==2){
+        if(x==0){
+          location.href="/signup"
+        }
+        else{
+          location.href="/rec-signup";
+        }
+      }
+
+        }
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      NUCES-CIRCLE
+    </div>
+  </header>
+  <div class="mainButtons">
+    <input id="but_login" type=button onClick="myfunc(1)" value='Login'>
+    <input id="but_sign"  type=button onClick="myfunc(2)"  value='Signup'>
+    <select id="sel">
+      <option value="student">Student</option>
+      <option value="Recruiter">Recruiter</option>
+    </select>
+
+  </div>
+
+
+
+  
+
+</body>
+
+
+</html>

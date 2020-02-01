@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style-profile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="Nav-bar">
+        <ul>
+      <div class="Simple-links">
+            <!-- <li id="n-c">Nuces Circle</li> -->
+            <li><a href="/newsfeed">Newsfeed</a></li>
+            <li><a href="/connect">Connect</a></li>
+            <li><a href="/connectionListing">Connections Listing</a></li>
+            <li><a href="/edit">Edit info</a></li>
+            <li><a href="/findjobs">Jobs</a></li>
+            <li><a href="/mail">Mail</a></li>
+
+      </div>
+      <div class="search-container">
+          <form action="#">
+              <input type="text" placeholder="Search.." name="search">
+              <!-- <button type="button" name="button">Find People</button> -->
+              <input type="button" name="Find people" value="Find People">
+          </form>
+      </div>
+
+
+          <div class="dropdown">
+            <button class="dropbtn">Settings</button>
+              <div class="dropdown-content">
+                <a href="#">privacy Settings</a>
+                <a href="#">Password Management</a>
+                <a href="/logout">Logout</a>
+              </div>
+          </div>
+
+      </ul>
+    </div>
+    <div class="Overall-info">
+      <div class="Profile-info">
+        <img src="images/image.jpeg" alt="Default pic">
+        <label id="lab1">Personal Information</label>
+        <h4 id="heading">Address</h4>
+        <p><%=address %></p>
+        <h4 id="heading">Contact info</h4>
+        <p><span>Phone:</span> <%= phoneNumber%> </p>
+        <p><span>E-Mail:</span>Raamish96@gmail.com</p>
+        <h4 id=heading>Education</h4>
+        <ul>
+          <li><span>matricMarks:</span><%= matricMarks%></li>
+          <li><span>fscMarks:</span><%= fscMarks%></li>
+          <li><span>Under-graduate</span></li>
+          <li><span>Semester num:</span><%= semNum%></li>
+          <li><span>GPA:</span><%= gpa%></li>
+          <li><span>Graduation year:</span><%= gradDate%></li>
+        </ul>
+
+
+      </div>
+
+      <div class="rest-info">
+
+        <div class="upper-info">
+          <h1 id="name"> <span id="flname"> <%=fname%> <%=lname%></span> </h1>
+          <h3 id="loc"><i class="fas fa-map-marker-alt"></i> Lahore,Pakistan</h3>
+          <p id="Job"><span>Interest/Job: </span><%=job%></p>
+          <h3>Experience</h3>
+          <ul>
+            <li>Internship 1</li>
+            <li>Internship 2</li>
+            <li>Internship 3</li>
+          </ul>
+          <h3>Skills</h3>
+          <ul>
+            <li><span>languages:</span><%=languages%></li>
+            <li><span>Web development:</span><%=webDev%></li>
+            <li><span>Databases:</span><%=databases%></li>
+            <li><span>Software Development:</span><%=softwareDev%></li>
+          </ul>
+
+        </div>
+
+        <div class="lower-info">
+          <h2>Status</h2>
+          <div class="status">
+            This is my current status. Random paragraph to check ths scrolling. In this exercise, the idea is to write a paragraph that would be a random passage from a story. An effective paragraph is one that has unity (it isn’t a hodgepodge of things), focus (everything in the paragraph stacks up to the whatever-it-is the paragraph is about), and coherence (the content follows smoothly). For this exercise, the paragraph should be quick to read--say, not be more than 100 words long.It was Ms. Fitzhugh. She was walking fast. A strange expression crossed the faces of the students as they glanced toward the door and saw the principal go straight into the boys’ restroom. The footsteps stopped. There was a deep, throaty sound difficult to describe. Then came an eruption of shrill screaming and a rapid sound of heels. Moments later, Ms. Fitzhugh emerged, her eyes wild. Screaming, she skidded in the hall and headed toward the office.
+            Above ground was the medieval settlement of Skaar’s Outpost, originally a fort to guard the cave entrance. Its inception as a town had been in the lodging and supply needs of explorers there to attempt the subterranean labyrinth when it had opened as a commercial venture. With the caverns’ flooding and subsequent closure, however, Skaar’s Outpost had declined into an agricultural community miles from any trade routes.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </body>
+</html>

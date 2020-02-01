@@ -1,0 +1,129 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #E3E3E3;
+  font-family: cursive;
+}
+#title{
+  text-align: center;
+  color: red;
+
+}
+
+.main-div{
+  /* text-align: center; */
+  width: 98%;
+  height: 650px;
+  margin-left: 20px;
+  margin-top: 2%;
+  /* border: 2px solid black; */
+
+}
+.left-div{
+  width: 470px;
+  height: 600px;
+  margin-left: 15px;
+  margin-top: 2%;
+  border: 2px solid black;
+  float: left
+}
+h2{
+  /* color: red; */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.left-div input[type="text"],input[type="password"],input[type="submit"]{
+
+  margin-top: 10px;
+  font-family: cursive;
+  /* padding-left: 5px; */
+  padding: 3px;
+  border: 2px solid black;
+  color: black;
+  font-size: 12px;
+  margin-left: 10px;
+
+}
+.left-div label{
+
+  margin-top: 10px;
+  font-weight: bold;
+}
+.right-div{
+  width: 470px;
+  height: 600px;
+  margin-left: 15px;
+  margin-top: 2%;
+  border: 2px solid black;
+  float: left
+}
+
+
+.right-div input[type="text"],input[type="password"],input[type="submit"]{
+
+  margin-top: 10px;
+  font-family: cursive;
+  /* padding-left: 5px; */
+  padding: 3px;
+  border: 2px solid black;
+  color: black;
+  font-size: 12px;
+  margin-left: 10px;
+
+}
+.right-div label{
+
+  margin-top: 10px;
+  font-weight: bold;
+}
+.right-div-2{
+  width: 470px;
+  height:600px;
+  margin-left: 15px;
+  margin-top: 2%;
+  border: 2px solid black;
+  float: left
+}
+.right-div-2 input[type="text"],input[type="password"],input[type="submit"]{
+
+  margin-top: 10px;
+  font-family: cursive;
+  /* padding-left: 5px; */
+  padding: 3px;
+  border: 2px solid black;
+  color: black;
+  font-size: 12px;
+  margin-left: 20px;
+
+}
+.right-div-2 label{
+
+  margin-top: 10px;
+  font-weight: bold;
+}
+textarea{
+  margin-left: 30px;
+  outline: none;
+  margin-top: 10px;
+  background-color: #E3E3E3;
+  color: black;
+  border: 2px solid black;
+  font-family: cursive;
+  font-size: 12px;
+}
+input[type="submit"]{
+  border-radius: 2px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  font-family: cursive;
+  font-size: 28px;
+  text-align: center;
+  margin-left: 33%;
+  cursor: pointer;
+
+}
+input[type="number"]{
+
+  border: 2px solid black;
+}

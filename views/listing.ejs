@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="css/students.css">
+
+
+    <title>students page</title>
+
+  </head>
+  <body>
+
+        <h1 id="title">Connections Listing Page</h1>
+        <!-- <form id="contact-form" action="/sendreq" method="post"> -->
+        <div class="maindiv">
+
+
+
+              <div id="friends">
+                      <h1>Approved Requests</h1>
+                    <div class="friend-box1">
+                      <% for(let i = 0; i < pending.length; i++) { %>
+                      <label id="name"  for="name"> <%=approved[i]%> </label> <br>
+                      <% } %>
+                    </div>
+              </div>
+
+              <div id="Pending">
+                  <h1>Pending Requests</h1>
+                    <div class="friend-box2">
+
+                          <% for(let i = 0; i < pending.length; i++) { %>
+                          <label id="name"  for="name"> <%=pending[i]%> </label> <br>
+                          <% } %>
+                    </div>
+              </div>
+
+              <div id="myrequests">
+                  <h1>Approve Requests</h1>
+                    <div class="friend-box3">
+
+                          <% for(let i = 0; i < myrequests.length; i++) { %>
+                          <label id="name"  for="name"> <%=myrequests[i]%> </label>
+                          <input type="button" name="send" value="accept">
+                          <% } %>
+                    </div>
+              </div>
+
+
+  </div>
+
+      <script src="jquery-3.4.0.js"></script>
+      <script type="text/javascript" src="main3.js"></script>
+
+
+
+  </body>
+</html>

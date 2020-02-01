@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/css/infoStyle.css">
+    <script src="../controllers/userInfoController.js"></script>
+    <meta charset="utf-8">
+    <title>user Info</title>
+  </head>
+  <body>
+
+    <h1 id="title">Hey <span id="span1" name="name"><%=name %></span>! its your first time, Lets set your profile.</h1>
+
+    <div class="main-div">
+      <form class="" action="/profile2" method="post">
+      <div class="left-div">
+
+
+                <table>
+                  <td><h2>Personal Information</h2> </td>
+                  <tr>
+
+                    <td align="left">Enter home address:</td>
+                    <td align="left"><input class="fir" type="text" name="homeAddress" /></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Enter phone number:</td>
+                    <td align="left"><input class="fire" type="text" name="phoneNumber" /></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Enter age:</td>
+                    <td align="left"><input class="fire" type="text" name="age" /></td>
+                  </tr>
+
+                <td><h2>Education</h2> </td>
+
+
+
+                 <tr>
+                   <td align="left">Enter matric marks:</td>
+                   <td align="left"><input type="number" name="matricMarks" /></td>
+                 </tr>
+                 <tr>
+                   <td align="left">Enter FSC marks:</td>
+                   <td align="left"><input type="number" min="0.01" step="0.01" name="fscMarks" /></td>
+                 </tr>
+                 <tr>
+                   <td align="left">Enter semester no:</td>
+                   <td align="left"><input type="number" min="0.01" step="0.01" name="semNum" /></td>
+                 </tr>
+                 <tr>
+                   <td align="left">Enter GPA:</td>
+                   <td align="left"><input type="number" min="0.01" step="0.01" name="gpa" /></td>
+                 </tr>
+
+                 <tr>
+                   <td align="left">Enter graduation date:</td>
+                   <td align="left"><input type="number" min="0.01" step="0.01" name="gradDate" /></td>
+                 </tr>
+
+
+
+               </table>
+
+               <input type="radio" name="gu"> Graduate<br>
+               <input type="radio" name="gu"> Under-Graduate<br>
+
+
+
+
+
+
+
+      </div>
+
+      <div class="right-div">
+        <table>
+          <td><h2>Experience</h2> </td>
+          <tr>
+
+            <td align="left">Enter first name:</td>
+            <td align="left"><input class="fir" type="text" name="fname" /></td>
+          </tr>
+          <tr>
+            <td align="left">Enter last name:</td>
+            <td align="left"><input class="fire" type="text" name="lname" /></td>
+          </tr>
+          <tr>
+            <td align="left">Enter interest / job (if any):</td>
+            <td align="left"><input class="fire" type="text" name="job" /></td>
+          </tr>
+          <td align="left"><h3>Enter internships (max 3):</h3></td>
+          <tr>
+            <td align="left">Enter internship #1 :</td>
+            <td align="left"><input  type="text" name="int1" /></td>
+          </tr>
+          <tr>
+            <td align="left">Enter internship #2 :</td>
+            <td align="left"><input  type="text" name="int2" /></td>
+          </tr>
+          <tr>
+            <td align="left">Enter internship #3 :</td>
+            <td align="left"><input  type="text" name="int3" /></td>
+          </tr>
+
+        </table>
+
+
+      </div>
+
+      <div class="right-div-2">
+        <table>
+          <td><h2>Skills</h2> </td>
+          <tr>
+
+            <td align="left">Languages:</td>
+            <td align="left"><input class="fir" type="text" name="languages" /></td>
+          </tr>
+          <tr>
+            <td align="left">Web development:</td>
+            <td align="left"><input class="fire" type="text" name="webDev" /></td>
+          </tr>
+          <tr>
+            <td align="left">Databases :</td>
+            <td align="left"><input class="fire" type="text" name="databases" /></td>
+          </tr>
+          <tr>
+            <td align="left">Software development :</td>
+            <td align="left"><input class="fire" type="text" name="softwareDev" /></td>
+          </tr>
+
+
+        </table>
+        <h2>Status</h2>
+        <label>Enter status (optional)</label>
+        <textarea rows="10" cols="50">
+
+        </textarea>
+
+
+        <input type="submit" name="submit" value="save info">
+      </div>
+
+    </form>
+    </div>
+
+
+  </body>
+</html>

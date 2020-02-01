@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/students.css">
+    <title>Newsfeed</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <h1 class="bg-success">Welcome to mailing service</h1>
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 results">
+           
+
+                <div id="friends">
+                        <% for(let i = 0; i < array.length; i++) { %>
+                            <div class="friend-box" data-divId="<%=i+1%>">
+                                <img src="images/avatar.png" alt="Avatar" class="avatar">
+                                <label id="name"  > <%=array[i].name%> </label> <br>
+                                <label id="name2"  for="name"> <%=array[i].email%> </label> <br>
+        
+                                   
+                                    <input class="btn-info" type="button" name="but" value="send mail">
+        
+        
+        
+        
+                            </div>
+        
+                        <% } %>
+        
+                      </div>
+        
+
+
+        </div>
+       
+        
+
+      </div>
+
+    </div>
+
+
+
+    <script src="jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="main8.js"></script>
+    
+  </body>
+</html>

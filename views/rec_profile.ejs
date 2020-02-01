@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src="searchCandidates.js"></script>
+
+    <link rel="stylesheet" href="css/style-rec-profile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="Nav-bar">
+        <ul>
+      <div class="Simple-links">
+            <!-- <li id="n-c">Nuces Circle</li> -->
+            <li><a href="#">Newsfeed</a></li>
+            <li><a href="#">Recruits</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="/candidates">Candidates</a></li>
+            <li><a href="#">Edit info</a></li>
+
+      </div>
+      <!-- <div class="search-container">
+          <form action="#">
+              <input type="text" placeholder="Search.." name="search">
+              <!-- <button type="button" name="button">Find People</button> -->
+              <!-- <input type="button" name="Find people" value="Find People"> -->
+          <!-- </form> -->
+      <!-- </div> -->
+
+
+          <div class="dropdown">
+            <button class="dropbtn">Settings</button>
+              <div class="dropdown-content">
+                <a href="#">privacy Settings</a>
+                <a href="#">Password Management</a>
+                <a href="rec_login.html">Logout</a>
+              </div>
+          </div>
+
+      </ul>
+    </div>
+    <div class="Overall-info">
+      <div class="Profile-info">
+        <img src="images/logo.png" alt="defualt white pic">
+          <label id="lab1">Company Information</label>
+          <h4 id="heading">Address</h4>
+          <p>150 Blue Street, Gulberg , Lahore  RedLines private limited company</p>
+          <h4 id="heading">Contact info</h4>
+          <p><span>Phone#1:</span> 03004918290 </p>
+          <p><span>Phone#2:</span> 03004918291 </p>
+          <p><span>PTCL::</span> 921135 </p>
+          <p><span>E-Mail:</span>CEO@RedLimited.com.pk</p>
+            <h4 id="heading">Mission Statement</h4>
+            <p>A mission statement is a short statement of why an organization exists, what its overall goal is, identifying the goal of its operations.</p>
+
+
+      </div>
+
+      <div class="rest-info">
+
+        <div class="upper-info">
+              <h2 id="new-job">Post new Job</h2>
+              <div class="job-box">
+                <!-- <form class="" action="/postjob" method="post" class="ajax"> -->
+                  <label class="label-job">Enter Job title:</label><input id="inp1" type="text" name="jobTitle" placeholder="Job Title"><br>
+                  <label class="label-job">Enter Description:</label><input id="inp2" type="text" name="description" placeholder="Description"><br>
+                  <label class="label-job">Enter Discipline:</label><input id="inp3" type="text" name="discipline" placeholder="Discipline"><br>
+                  <label class="label-job">Enter Experience:</label><input id="inp4"  type="text" name="experience" placeholder="Experience"><br>
+                  <label class="label-job">Enter tags:</label><input id="inp5" type="text" name="tags" placeholder="tags"><br>
+                  <input id="inp6" type="submit" name="postjob" value="Post Job">
+                <!-- </form> -->
+
+              </div>
+
+        </div>
+         <script src="jquery-3.4.0.js"></script>
+         <script src="main.js"></script>
+         <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js" type="text/javascript"></script>
+
+
+        <div class="lower-info">
+              <h2 class="search-candidates">Search Candidates</h2>
+              <label class="search-candidates-label">Select Graduation year </label>
+              <select id="grad-date">
+                <option value="date1">2018</option>
+                <option value="date2">2019</option>
+                <option value="date3">2020</option>
+              </select>
+
+                <label class="search-candidates-label">Select interests </label>
+              <select id="interests">
+                <option value="interest1">web</option>
+                <option value="interest2">Android</option>
+                <option value="interest3">IOS</option>
+              </select>
+
+                <label class="search-candidates-label">Select GPA </label>
+              <select id="Gpa">
+                <option value="gpa1">3.7</option>
+                <option value="gpa2">2.5</option>
+                <option value="gpa3">3.0</option>
+              </select>
+              <label class="search-candidates-label">Select semster no </label>
+            <select id="semester">
+              <option value="sem1">5</option>
+              <option value="sem2">6</option>
+              <option value="sem3">7</option>
+            </select>
+              <div class="search-container">
+                  <form action="#">
+                      <!-- <input type="text" placeholder="Search.." name="search"> -->
+                       <!-- <button type="button" name="button">Find People</button>  -->
+                     <!-- <input class="search-candidates-button" type="button" name="Search-candidates" value="Search candidates"> -->
+                       <input  class="search-candidates-button" type=button onClick="search1()" value='Search-candidates'>
+                   </form>
+
+             </div>
+             <div id="result">
+
+                <!-- <label id="hid">Result</label>
+                <p id="res"></p> -->
+
+
+             </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </body>
+</html>

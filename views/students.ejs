@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="css/students.css">
+
+
+    <title>students page</title>
+
+  </head>
+  <body>
+    <div class="regStudents">
+        <h1 id="title">Registered Students</h1>
+        <!-- <form id="contact-form" action="/sendreq" method="post"> -->
+
+
+              <div id="friends">
+                <% for(let i = 0; i < students.length; i++) { %>
+                    <div class="friend-box" data-divId="<%=divId[i]%>">
+                        <img src="images/avatar.png" alt="Avatar" class="avatar">
+                        <label id="name"  for="name"> <%=students[i]%> </label> <br>
+
+                            <!-- <button id="<%=i+1%>" class="btn-info" value="value"> <%=check[i]%> </button> -->
+                            <input class="btn-info" type="button" name="but" value="<%=check[i]%>">
+
+
+
+
+                    </div>
+
+                <% } %>
+
+              </div>
+
+      <!-- </form> -->
+
+    </div>
+      <script src="jquery-3.4.0.js"></script>
+      <script type="text/javascript" src="main2.js"></script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/students.css">
+    <title>Find jobs</title>
+  </head>
+  <body>
+    <div class="jobs">
+        <h1 id="title1">Jobs posted</h1>
+
+
+
+
+
+
+        <% for(var i=0; i<jobs.length; i++) {%>
+
+
+          <div class="newJob"  data-divId="<%=divId[i]%>">
+            <h2>Job <%=i+1 %></h2>
+              <ul>
+
+        <li> <span> Job Title :</span><label for="name"> <%= jobs[i].jobtitle %></label></li>
+          <li> <span> Job description :</span><%= jobs[i].decription %></li>
+            <li> <span> Job discipline :</span><%= jobs[i].discipline %></li>
+              <li> <span> Job experience :</span><%= jobs[i].experience %></li>
+                <li> <span> Job tags:</span><%= jobs[i].tags %></li>
+                    <li><span> Relvancy : </span><%=relevancy%>% </li>
+                <input id="but" type="button" name="" value="Apply for job">
+
+
+        </ul>
+
+        </div>
+
+<% } %>
+
+    </div>
+
+    <script src="jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="main4.js"></script>
+
+
+  </body>
+</html>
